@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+    <!-- Required meta tags -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Inhalt -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Mathematiker</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+
+        <!-- Output student and Lehrbetrieb -->
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-header">Mathematikstudierende</div>
+                    <ul class="list-group list-group-flush">
+                        <li id="identification" class="list-group-item">?</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-bottom: 1.5rem"></div>
+            <div class="second">
+                <div class="col-sm">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-header">Ausbildungsstand</div>
+                        <ul class="list-group list-group-flush">
+                            <li id="ausbildung" class="list-group-item">?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output courses -->
+
+
+        <div class="row">
+            <div class="col-sm">
+                <div style="padding-top: 2rem"></div>
+                <div class="card" style="width: 25rem;">
+                    <div class="card-header">Lieblingsthemen</div>
+                    <ul class="list-group list-group-flush">
+                        <li id="lieblingsthemen" class="list-group-item">?</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding-top: 2rem"></div>
+            <div style="margin-bottom: 1.5rem"></div>
+            <div class="second">
+                <div class="col-sm">
+                    <div class="card" style="width: 25rem;">
+                        <div id="allgemeinTitle" class="card-header">Allgemeinbildung</div>
+                        <ul class="list-group list-group-flush">
+                            <li id="allgemein" class="list-group-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div style="margin-bottom: 2rem"></div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul id="pagination" class="pagination">
+                <li class="page-item">
+                    <a class="page-link" style="color: hsl(355, 66%, 50%);" onclick="showPrevious()"
+                        href="#">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" style="color: hsl(355, 66%, 50%);" onclick="showNext()" href="#">Next</a>
+                </li>
+            </ul>
+    </div>
+    </nav>
+    <!-- Optional JavaScript -->
+    <script src="./script/data.js"></script>
+    <script src="./script/app.js"></script>
+
+    <!--=============== SCROLL REVEAL ===============-->
+
+</body>
+
+</html>

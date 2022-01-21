@@ -1,4 +1,3 @@
-JavaScript
 var display = null;
 var equation = null;
 var value_save = null;
@@ -20,7 +19,7 @@ function c() {
 }
 
 function remove_something() {
-    alert("Don't look so stupid, I didn't know what to do");
+
 }
 
 function number(num) {
@@ -112,7 +111,7 @@ function result() {
                 if (value2 != 0) {
                     result = value_save / value2;
                 } else {
-                    alert('Dividing by zero calls Chuck Norris');
+                    alert('error');
                 }
                 break;
         }
