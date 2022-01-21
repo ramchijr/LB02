@@ -3,7 +3,7 @@
  * Deklaration der Variablen
  */
 let index;
-let client = undefined;
+let mathe = undefined;
 
 /**
  * Ausgabe zeigen
@@ -12,30 +12,30 @@ function showUI(){
     //Identification
     let htmlObj = document.getElementById("identification");
     htmlObj.innerHTML =
-        `Vorname: ${client.Vorname}<br>`+
-        `Name: ${client.Name}<br>`+
-        `Alter: ${client.Alter}`;
+        `Vorname: ${mathe.Vorname}<br>`+
+        `Name: ${mathe.Name}<br>`+
+        `Alter: ${mathe.Alter}`;
 
 //Workplace
     htmlObj = document.getElementById("ausbildung");
     htmlObj.innerHTML =
-        `Studium: ${client.betrieb.Studium}<br>`+
-        `Studiengang: ${client.betrieb.Studiengang}<br>`+
-        `Note: ${client.betrieb.Note}`;
+        `Studium: ${mathe.betrieb.Studium}<br>`+
+        `Studiengang: ${mathe.betrieb.Studiengang}<br>`+
+        `Note: ${mathe.betrieb.Note}`;
 
     //Kurse - Problems
     htmlObj = document.getElementById("lieblingsthemen");
     //clear
     htmlObj.innerHTML = "";
     //set
-    client.courses.lieblingsthemen.forEach(modulid => {
+    mathe.courses.lieblingsthemen.forEach(modulid => {
         htmlObj.innerHTML += `${modulid}<br>`;
     });
 
 
 
     let fach = "EFZ Abschluss";
-    if (client.new){
+    if (mathe.new){
         fach = "Gymnasium Abschluss";
     }
     htmlObj = document.getElementById("allgemeinTitle");
@@ -49,7 +49,7 @@ function showUI(){
     //clear
     htmlObj.innerHTML = "";
     //set
-    let faecherListe = client.courses.allgemein;
+    let faecherListe = mathe.courses.allgemein;
     for (let i=0;i<faecherListe.length; i++){
         htmlObj.innerHTML += `${faecherListe[i]}<br>`;
     };
@@ -80,7 +80,7 @@ function showNext() {
         index = 0;
     } else {
         //... sonst falls der index eins kleiner als das Maximum ist
-        if (clientListe.length-1 > index){
+        if (matheListe.length-1 > index){
             //... erhöhe den index um 1
             index++;
         }
@@ -88,7 +88,7 @@ function showNext() {
     //speichere wieder den index im Browser-Speicher
     localStorage.setItem("index", index);
     //hole den nächst höheren Eintrag
-    client = clientListe[index];
+    mathe = matheListe[index];
     //zeige den Eintrag
     showUI();
 }
@@ -115,20 +115,20 @@ function showPrevious() {
     //speichere wieder den index im Browser-Speicher
     localStorage.setItem("index", index);
     //hole den nächst höheren Eintrag
-    client = clientListe[index];
+    mathe = matheListe[index];
     //zeige den Eintrag
     showUI();
 }
 
 //start app
 //Falls der index nicht definiert ist ...
-if (client === undefined){
+if (mathe === undefined){
     //... dann setze den index auf 0 (Anfang)
     index = 0;
     //speichere wieder den index im Browser-Speicher
     localStorage.setItem("index", index);
     //hole den nächst höheren Eintrag
-    client = clientListe[index];
+    mathe = matheListe[index];
     //zeige den Eintrag
     showUI();
 }
