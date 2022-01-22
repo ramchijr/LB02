@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12rem;
+    background-color: #DDD;
+}
+
+h1{
+    margin-bottom: 0.5rem;
+}
+
+header nav {
+    margin-bottom: 1rem;
+    background-color: BFBBBB;
+}
+
+header nav a {
+    display: block;
+    padding: 1rem;
+    transition: 300ms;
+}
+
+header nav a:hover {
+    background-color: rgb(255, 238, 0);
+}
+
+header nav a.active {
+    font-weight: bold;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    margin-left: 10px;
+}
+
+#brand img {
+    height: 6rem;
+}
+
+#brand h1 {
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+
+#brand h1 small {
+    display: block;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
