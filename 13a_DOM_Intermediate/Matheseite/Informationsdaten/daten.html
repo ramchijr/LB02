@@ -35,60 +35,58 @@
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h2 class="display-4">Informationen</h2>
+                <h1 class="titel">Informationsdaten</h1>
                 <p class="lead"></p>
             </div>
         </div>
 
         <!-- Output Mathematikstudierende -->
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">Mathematikstudierende</div>
-                    <ul class="list-group list-group-flush">
-                        <li id="identification" class="list-group-item">?</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="margin-bottom: 1.5rem"></div>
-            <div class="second">
-                <div class="col-sm">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-header">Ausbildungsstand</div>
+        <div class="output">
+            <div class="row ">
+                <iv class="col-sm">
+                    <div class="card bg-c-t" style="width: 25rem;">
+                        <div class="card-header">Mathematikstudierende</div>
                         <ul class="list-group list-group-flush">
-                            <li id="ausbildung" class="list-group-item">?</li>
+                            <li id="identification" class="list-group-item">?</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Output Lieblingsthemen -->
-
-
-        <div class="row">
-            <div class="col-sm">
-                <div style="padding-top: 2rem"></div>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">Lieblingsthemen</div>
-                    <ul class="list-group list-group-flush">
-                        <li id="lieblingsthemen" class="list-group-item">?</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="padding-top: 2rem"></div>
-            <div style="margin-bottom: 1.5rem"></div>
-            <div class="second">
-                <div class="col-sm">
-                    <div class="card" style="width: 25rem;">
-                        <div id="allgemeinTitle" class="card-header">()</div>
-                        <ul class="list-group list-group-flush">
-                            <li id="allgemein" class="list-group-item"></li>
-                        </ul>
+                </iv>
+                <div style="margin-bottom: 1.5rem"></div>
+                <div class="second">
+                    <div class="col-sm">
+                        <div class="card bg-c-t" style="width: 25rem;">
+                            <div class="card-header">Ausbildungsstand</div>
+                            <ul class="list-group list-group-flush">
+                                <li id="ausbildung" class="list-group-item">?</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Output Lieblingsthemen -->
+
+            <div class="puffer"></div>
+            <div class="row lieblingsthemen">
+                <div class="col-sm">
+                    <div class="card bg-c-t" style="width: 25rem;">
+                        <div class="card-header">Lieblingsthemen</div>
+                        <ul class="list-group list-group-flush">
+                            <li id="lieblingsthemen" class="list-group-item">?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="col-sm">
+                        <div class="card bg-c-t" style="width: 25rem;">
+                            <div id="allgemeinTitle" class="card-header">()</div>
+                            <ul class="list-group list-group-flush">
+                                <li id="allgemein" class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -98,11 +96,11 @@
         <nav aria-label="Page navigation example">
             <ul id="pagination" class="pagination">
                 <li class="page-item">
-                    <a class="page-link" style="color: hsl(355, 66%, 50%);" onclick="showPrevious()"
+                    <a class="page-link button" onclick="showPrevious()"
                         href="#">Previous</a>
                 </li>
                 <li class="page-item">
-                    <a class="page-link" style="color: hsl(355, 66%, 50%);" onclick="showNext()" href="#">Next</a>
+                    <a class="page-link button" onclick="showNext()" href="#">Next</a>
                 </li>
             </ul>
     </div>

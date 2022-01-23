@@ -12,6 +12,14 @@ h1{
     margin-bottom: 0.5rem;
 
 }
+
+.titel{
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: cornflowerblue;
+}
+
 h2 {
     font-size: x-large;
     font-weight: bold;
@@ -74,17 +82,43 @@ nav ul {
 
 body {
     position: center;
-    height: 1300px;
+    height: auto;
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial;
 }
 
+.output {
+    height: 400px;
+}
+
+.puffer {
+    height: 60px;
+}
+
+.bg-c-t {
+    background-color: cornflowerblue;
+}
+
+.bg-c-b {
+    background-color: lavender;
+}
+
+.button {
+    color: black;
+    background-color: lavender;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
 footer {
+    margin-top: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 5rem;
     background-color: #DDD;
     font-size: 0.9rem;
