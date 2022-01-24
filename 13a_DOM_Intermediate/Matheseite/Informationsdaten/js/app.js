@@ -16,14 +16,14 @@ function showUI(){
         `Name: ${mathe.Name}<br>`+
         `Alter: ${mathe.Alter}`;
 
-//Workplace
+//Ausbildung
     htmlObj = document.getElementById("ausbildung");
     htmlObj.innerHTML =
         `Studium: ${mathe.betrieb.Studium}<br>`+
         `Studiengang: ${mathe.betrieb.Studiengang}<br>`+
         `Note: ${mathe.betrieb.Note}`;
 
-    //Kurse - Problems
+    //Lieblingsthemen
     htmlObj = document.getElementById("lieblingsthemen");
     //clear
     htmlObj.innerHTML = "";
@@ -44,7 +44,7 @@ function showUI(){
     //set
     htmlObj.innerHTML += " " + fach;
 
-    //Kurse - Allgemein Bildung
+
     htmlObj = document.getElementById("allgemein");
     //clear
     htmlObj.innerHTML = "";
@@ -54,15 +54,6 @@ function showUI(){
         htmlObj.innerHTML += `${faecherListe[i]}<br>`;
     };
 
-
-
-    //Index im Pagination-Element zeigen
-    htmlObj = document.getElementById("showIndex");
-    //clear
-    htmlObj.innerHTML = "";
-    //set
-    htmlObj.innerHTML = index;
-}
 
 
 
@@ -75,7 +66,7 @@ function showNext() {
     //Testausgabe auf der Console
     console.log(index);
     //Falls der index nicht definiert ist ...
-    if (index == undefined){
+    if (index === undefined){
         //... dann setze den index auf 0 (Anfang)
         index = 0;
     } else {
@@ -102,7 +93,7 @@ function showPrevious() {
     //Testausgabe auf der Console
     console.log(index);
     //Falls der index nicht definiert ist ...
-    if (index == undefined){
+    if (index === undefined){
         //... dann setze den index auf 0 (Anfang)
         index = 0;
     } else {
