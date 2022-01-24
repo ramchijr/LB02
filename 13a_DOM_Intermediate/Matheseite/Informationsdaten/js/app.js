@@ -10,7 +10,7 @@ let mathe = undefined;
  */
 function showUI(){
     //Identification
-    let htmlObj = document.getElementById("identification");
+    let htmlObj = document.getElementById("Mathematikstudierende");
     htmlObj.innerHTML =
         `Vorname: ${mathe.Vorname}<br>`+
         `Name: ${mathe.Name}<br>`+
@@ -34,15 +34,15 @@ function showUI(){
 
 
 
-    let fach = "EFZ Abschluss";
+    let Abschluss = "EFZ Abschluss";
     if (mathe.new){
-        fach = "Gymnasium Abschluss";
+        Abschluss = "Gymnasium Abschluss";
     }
     htmlObj = document.getElementById("allgemeinTitle");
     //clear
     htmlObj.innerHTML = "";
     //set
-    htmlObj.innerHTML += " " + fach;
+    htmlObj.innerHTML += " " + Abschluss;
 
 
     htmlObj = document.getElementById("allgemein");
